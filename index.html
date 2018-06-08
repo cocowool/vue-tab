@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+	<title>智慧园区考勤操作指引</title>
+	<meta name="description" content="描述了北数员工如何绑定智慧园区，并通过智慧园区进行日常工作考勤。">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link href="./bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		@-ms-viewport     { width: device-width; }
+		@-o-viewport      { width: device-width; }
+		@viewport         { width: device-width; }
+		
+		body { padding-top:20px; padding-bottom: 20px; }
+		.header, .footer { padding-right: 15px; padding-left: 15px; }
+		.header { padding-bottom: 20px; border-bottom: 1px solid #e5e5e5; margin-bottom: 30px; }
+		.header h3 { margin-top: 0; margin-bottom: 0; line-height: 40px; }
+		.footer { padding-top: 19px; color: #777; border-top: 1px solid #e5e5e5; margin-top: 30px; }
+		.jumbotron {  }
+		.step-container { margin:30px 0; }
+
+		@media (min-width: 1024px) {
+			.container {
+				max-width: 1000px;
+			}
+		}
+
+		.container-narrow > hr { margin: 30px 0; }
+		.step-container { clear: both; vertical-align: middle; display: table-cell; margin-bottom: 30px; }
+		.rs-step-container { height: 40px; margin-bottom: 25px; }
+		.rs-arrow {  }
+		.rs-arrow .rs-step { text-align:center; cursor: pointer; display: inline-block; padding:10px 38px 10px 38px; position: relative; background-color: #e7e7e7; margin:0 3px; font-size: 14px;-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;  }
+		.rs-arrow .rs-step:after, .rs-arrow .rs-step:before { content: " "; position: absolute; top: 0; right: -17px; width: 0; height: 0; border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-left: 17px solid #e7e7e7; z-index: 2; transition: border-color 0.2s ease; }
+		.rs-arrow .rs-step:before { right: auto; left: 0; border-left: 17px solid #fff;	 z-index: 0; }
+		.rs-arrow .rs-step:first-child:before { border: none; }
+		.rs-arrow .rs-step:first-child { border-top-left-radius: 4px; border-bottom-left-radius: 4px; }
+		.rs-arrow .current, .rs-arrow .active { background-color: #337ab7; color:#fff; }
+		.rs-arrow .current:after, .rs-arrow .active:after { border-left-color: #337ab7;  }
+		.rs-arrow .active a { color:#fff; }
+		.rs-arrow div:hover { color:tomato; }		
+		.rs-arrow a:hover { text-decoration: none; }
+		.step-content { margin-top: 50px; }
+
+		.fade-enter-active, .fade-leave-active { transition: opacity .5s; }
+		.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ { opacity: 0; }
+
+		/*路由切换动画*/
+		.slide-right-enter-active,
+		.slide-right-leave-active,
+		.slide-left-enter-active,
+		.slide-left-leave-active {
+			will-change: transform;
+			transition: all 500ms;
+			position: absolute;
+		}
+		.slide-right-enter {
+			opacity: 0;
+			transform: translate3d(-100%, 0, 0);
+		}
+		.slide-right-leave-active {
+			opacity: 0;
+			transform: translate3d(100%, 0, 0);
+		}
+		.slide-left-enter {
+			opacity: 0;
+			transform: translate3d(100%, 0, 0);
+		}
+		.slide-left-leave-active {
+			opacity: 0;
+			transform: translate3d(-100%, 0, 0);
+		}
+		.fade-enter-active, .fade-leave-active {
+			transition: opacity 0.3s
+		}
+
+		.fade-enter, .fade-leave-active {
+			opacity: 0
+		}
+	</style>
+	<!--[if lt IE 8]>
+		<script type="text/javascript">
+			window.location.href='unsupport_tips.html'
+		</script>
+	<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="./html5shiv.min.js"></script>
+      <script src="./respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="container">
+		<div class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills pull-right">
+					<li><a href="http://11.140.162.82:8888/" target="_blank">北数考勤系统</a></li>
+					<li><a href="http://kqgl.jh:8008/signInfo/faces/login.jsp" target="_blank">武数考勤系统</a></li>
+					<li><a href="javascript:void(0);">智慧园区APP</a></li>
+				</ul>
+			</nav>
+			<h3 class="text-muted" id="ccb-title" v-bind:title="message">智慧园区考勤指引</h3>
+		</div>
+		<div id="app">
+			
+		</div>
+		<footer class="footer">
+			<p>&copy;2018 北京数据中心</p>
+		</footer>
+	</div>	
+	<script src="./jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="./bootstrap-3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="./dist/build.js"></script>
+	<script type="text/javascript" src="./bsuser_utf8.js"></script>
+</body>
+</html>
