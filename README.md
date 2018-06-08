@@ -11,6 +11,7 @@
 #### npm run build
 ```
 
-欢迎关注我的微信公众号，了解更多信息。
+欢迎访问我的[博客](http://cnblogs.com/cocowool)，进行交流。
+欢迎关注我的微信公众号，了解更多科技信息。
 
 ![](http://www.edulinks.cn/static/default/image/sapublic.jpg)
