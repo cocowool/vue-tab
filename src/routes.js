@@ -4,7 +4,7 @@ export default {
     path : '/',
     meta : { index:0 }
   },
-  '/about' : {
+  '/step1' : {
     name : 'Step1',
     path : '/step1',
     meta : { index:1 }
