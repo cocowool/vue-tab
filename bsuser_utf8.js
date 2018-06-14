@@ -1,0 +1,1 @@
+var bsuser = [{"ID":"2201111111111111","CNNAME":"\u90ed","WHUSER":"guomeimei","WHID":1816,"BSID":50,"BSUSER":"guomei"},{"ID":"370111111111111111","CNNAME":"\u6b66","WHUSER":"wuwu","WHID":3977,"BSID":845,"BSUSER":"wuwu"}]
